@@ -103,7 +103,7 @@ def euler_step_temp(y, para, n):
     return y + h * dTheta(q=ONOFF[n], Tt=y, a=a, b=b, Pm=Pm) # 欧拉法的微分方程
 
 def ImportAGC():
-    file_path = './virtual_battery/data/rto-regulation-signal-08-2024.xlsx'
+    file_path = 'data/rto-regulation-signal-08-2024.xlsx'
     sheet_name = 'Dynamic'
     data = pd.read_excel(file_path, sheet_name)
 
